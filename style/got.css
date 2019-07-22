@@ -57,8 +57,10 @@ font-family: got, sans-serif;
   cursor: pointer;
   width: 0;
 }
-.input-icons i { 
-    position: absolute; 
+.fa-search { 
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
 } 
 .input-icons { 
     position: absolute;
@@ -67,16 +69,18 @@ font-family: got, sans-serif;
     margin-bottom: 10px; 
 } 
 .icon { 
-    margin: 10px;
+    
     padding: 10px; 
     color: #FF0000; 
     min-width: 10px; 
-    text-align: center; 
+    
     z-index: 1;
     border: solid 1px;
     background-color: #bbbbbb;
 } 
 .searchInput { 
+    border-radius: 10px;
+    justify-content: center;
     width: 50%; 
     padding: 10px; 
     text-align: center; 
@@ -93,23 +97,25 @@ font-family: got, sans-serif;
     text-align: center;
     text-shadow: white 5px;
     margin: 10px;
-    font-size: 8px;
+    font-size: 9px;
     font-optical-sizing: auto;
     color:#000000;
     letter-spacing: 2px;
 }
 .main_container_divs {
+    margin: 24px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     grid-row: auto;
     flex-wrap: wrap;
     text-align: center;
     text-shadow: 3px;
 }
-.fa-chevron-right {
-    position: relative;
-    left: 10px;
-    padding: 7px;
+.fa-chevron-right {   
+    padding: 8px;
+    width: 8%;
+    justify-content: flex-start;  
+    text-align: center;
     color: #ffffff;
     border: solid 2px #ffffff;
     border-radius: 4px;
@@ -118,5 +124,12 @@ font-family: got, sans-serif;
     width: 75px;
 }
 .input-icons{
-  justify-content: space-between;
+    
+  justify-content: space-around;
+}
+.one{
+    align-items: center;
+    justify-content: flex-start;
+    width: 9vw;
+    height: 16vh;
 }

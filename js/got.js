@@ -38,9 +38,10 @@ const dataGOTChars = {
   objectsToView() {
     let gotContents = '';
     this.liveData.forEach((element, i) => {
-      gotContents += `<div class="main_container_divs">
+      gotContents += `<div class="one"><div class="main_container_divs">
       <img src="/${this.liveData[i].portrait}" alt="${this.liveData[i].name}">
       <div class="got_name" onclick="dataGOTChars.showDescription(${i})">${this.liveData[i].name}</div>
+      </div>
       </div>`;
       document.querySelector('.content--view').innerHTML = gotContents;
     });

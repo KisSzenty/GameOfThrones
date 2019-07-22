@@ -1,5 +1,13 @@
+@font-face{
+    font-family: got;
+    src: url(/fonts/Game\ of\ Thrones.ttf);
+}
 body {
     margin: 0;
+font-family: got, sans-serif;
+}
+.flex {
+    display: flexbox;
 }
 #top-image {
     background: url(/assets/site/mapblue.jpg) -25px -50px;
@@ -10,4 +18,105 @@ body {
     height: 100%;
     background-size: calc(100% + 50px);
   }
-  
+.content--view{
+    background: inherit;
+    width: 75vw;
+    position: relative;
+    height: 100vh;
+    flex-flow: row wrap;
+    display: flex;
+}
+.content--searchbar{
+    background: radial-gradient(#666,#222);
+    width: 25vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+    z-index: 1;
+}
+.searchInput{
+    align-items: flex-end;
+    font-family: FontAwesome;
+}
+.content--searchbar-title{
+    font-size: auto;
+    font-optical-sizing: auto;
+    color:#ffffff;
+    letter-spacing: 2px;
+}
+.icon-search {
+    position: relative;
+  z-index: 1;
+  left: -25px;
+  top: 1px;
+  color: #7B7B7B;
+  cursor: pointer;
+  width: 0;
+}
+.input-icons i { 
+    position: absolute; 
+} 
+.input-icons { 
+    position: absolute;
+    bottom: 30px;
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+.icon { 
+    margin: 10px;
+    padding: 10px; 
+    color: #FF0000; 
+    min-width: 10px; 
+    text-align: center; 
+    z-index: 1;
+    border: solid 1px;
+    background-color: #bbbbbb;
+} 
+.searchInput { 
+    width: 50%; 
+    padding: 10px; 
+    text-align: center; 
+} 
+.display--none {
+    display: none;
+}
+.notFound {
+    color: #FF0000;
+}
+.got_name {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: white 5px;
+    margin: 10px;
+    font-size: 8px;
+    font-optical-sizing: auto;
+    color:#000000;
+    letter-spacing: 2px;
+}
+.main_container_divs {
+    align-items: center;
+    justify-content: center;
+    grid-row: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    text-shadow: 3px;
+}
+.fa-chevron-right {
+    position: relative;
+    left: 10px;
+    padding: 7px;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    border-radius: 4px;
+}
+.content--view img {
+    width: 75px;
+}
+.input-icons{
+  justify-content: space-between;
+}

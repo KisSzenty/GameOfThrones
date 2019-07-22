@@ -8,16 +8,34 @@
     <meta http-equiv="X-UA-Compatible"
           content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet"
-          href="/style/got.css">
+    <link href="/style/got.css"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <div id="top-image">
 
+    <div class="content"
+         id="top-image">
+        <div class="content--view flex"> Ez is egy fos</div>
+        <div class="content--searchbar flex">
+            <p class="content--searchbar-title">Game of Thrones</p>
+            <div class="main_container-description flex"></div>
+            <div class="notFound display--none">A keresett karakter nincs meg</div>
+            <div class="input-icons flex">
+                <i class="fa fa-chevron-right"
+                   aria-hidden="true"
+                   onclick="dataGOTChars.searchByName()"></i>
+                <i class="fa fa-search icon"></i>
+                <input class="searchInput"
+                       type="text"
+                       placeholder="Teljes nevet írj">
+
+            </div>
         </div>
-    </main>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
     <script src="/js/got.js"></script>
